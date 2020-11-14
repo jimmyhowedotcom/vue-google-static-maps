@@ -11,20 +11,26 @@ export default {
       type: String,
       required: true
     },
-    alt: {
+    center: {
       type: String,
-      default: "Google Static Image"
+      required: false,
+      default: "G2 4JR"
+    },
+    size: {
+      type: String,
+      required: false,
+      default: "300x300"
+    },
+    scale: {
+      type: Number,
+      default: 1
     }
   },
 
   data()
   {
     return {
-      parameters: {
-        center: "G20 9TA",
-        size: "300x300",
-        scale: 2
-      }
+      parameters: {}
     }
   },
 
@@ -32,7 +38,12 @@ export default {
 
     source()
     {
-      let parameters = Object.assign(this.parameters, {key: this.apiKey});
+      let parameters = {
+        key: this.apiKey,
+        center: this.center,
+        size: this.size,
+        scale: this.scale,
+      }
 
       return "https://maps.googleapis.com/maps/api/staticmap?" + toQueryString(parameters);
     }
@@ -44,11 +55,7 @@ export default {
 
 <template>
 
-  <div class="GoogleStaticMap">
-
-    <img :alt="alt" :src="source">
-
-  </div>
+  <img :alt="alt" :src="source">
 
 </template>
 

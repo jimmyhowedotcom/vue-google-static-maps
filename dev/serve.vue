@@ -12,6 +12,9 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <GoogleStaticMap api-key="key" alt="Testing ..."/>
+    <GoogleStaticMap api-key="YOUR_KEY"
+                     center="G20 9TA"
+                     alt="Testing"
+    />
   </div>
 </template>
