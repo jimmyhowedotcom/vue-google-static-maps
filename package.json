@@ -1,7 +1,7 @@
 {
   "name": "vue-google-static-maps",
   "version": "1.0.0",
-  "description": "",
+  "description": "Google Static Map component for Vue",
 
   "main": "dist/vue-google-static-maps.ssr.js",
   "browser": "dist/vue-google-static-maps.esm.js",
