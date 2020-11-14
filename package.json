@@ -1,18 +1,15 @@
 {
-  "name": "vue-google-static-maps",
-  "version": "1.0.0",
+  "name": "@jimmyhowedotcom/vue-google-static-maps",
+  "version": "0.0.1",
   "description": "Google Static Map component for Vue",
-
   "main": "dist/vue-google-static-maps.ssr.js",
   "browser": "dist/vue-google-static-maps.esm.js",
   "module": "dist/vue-google-static-maps.esm.js",
   "unpkg": "dist/vue-google-static-maps.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -20,10 +17,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
@@ -46,5 +40,21 @@
   },
   "engines": {
     "node": ">=10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmyhowedotcom/vue-google-static-maps.git"
+  },
+  "keywords": [
+    "vue",
+    "google",
+    "static",
+    "maps"
+  ],
+  "author": "Jimmy Howe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmyhowedotcom/vue-google-static-maps/issues"
+  },
+  "homepage": "https://github.com/jimmyhowedotcom/vue-google-static-maps#readme"
 }
