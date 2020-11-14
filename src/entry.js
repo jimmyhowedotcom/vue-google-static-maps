@@ -1,5 +1,5 @@
 // Import vue component
-import component from '@/vue-google-static-map.vue';
+import component from '@/vue-google-static-maps.vue';
 
 // install function executed by Vue.use()
 const install = function installGoogleStaticMap(Vue) {

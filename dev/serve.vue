@@ -1,6 +1,6 @@
 <script>
 import Vue from 'vue';
-import GoogleStaticMap from '@/vue-google-static-map.vue';
+import GoogleStaticMap from '@/vue-google-static-maps.vue';
 
 export default Vue.extend({
   name: 'ServeDev',

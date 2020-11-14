@@ -70,7 +70,7 @@ if (!argv.format || argv.format === 'es') {
     ...baseConfig,
     external,
     output: {
-      file: 'dist/vue-google-static-map.esm.js',
+      file: 'dist/vue-google-static-maps.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -104,7 +104,7 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-google-static-map.ssr.js',
+      file: 'dist/vue-google-static-maps.ssr.js',
       format: 'cjs',
       name: 'GoogleStaticMap',
       exports: 'named',
@@ -133,7 +133,7 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-google-static-map.min.js',
+      file: 'dist/vue-google-static-maps.min.js',
       format: 'iife',
       name: 'GoogleStaticMap',
       exports: 'named',

@@ -53,7 +53,7 @@ export default {
 </template>
 
 <style scoped>
-.vue-google-static-map {
+.vue-google-static-maps {
 
   /* styles */
 
